@@ -2,8 +2,8 @@
    Forked by mkualquiera for HueCord */
 
 .theme-dark {
-    --bg: url(https://i.imgur.com/2WHzMbs.jpg); /* background for the whole window. */
-    --bg-overlay: rgb(0, 0, 14); /* overlay for the background, intended for darkening the picture to make text more readable. */
+    --bg: #00000000;
+    --bg-overlay: rgba(0, 0, 14, 0.92); /* overlay for the background, intended for darkening the picture to make text more readable. */
     --accent: rgba(153, 0, 133); /* prominent color in the UI */
     --background-mentioned: rgb(233, 0, 202,0.05);
     --accent-bright: rgb(255, 0, 234); /* color of mention text and other miscellaneous text */
@@ -23,6 +23,8 @@
     --gift-button: none; /* nitro gift button in chat */
     --gif-picker: flex; /* gif picker button in chat */
     --discovery: flex; /* server discovery button under server list */
+    --scrollbar-auto-track: rgb(27, 120, 120);
+    --scrollbar-auto-thumb: rgb(27, 200, 200);
 
     --trans02: rgba(0, 255, 255, 0.02);
     --trans03: rgba(0, 255, 255, 0.03);
@@ -69,9 +71,13 @@ html {
     background-position: center !important;
 }
 body {
-    
+    font-family: 'Ubuntu', normal;
     background: var(--bg-overlay) !important;
     margin: 0;
+}
+
+* {
+    border-radius: 0% !important;
 }
 
 .theme-dark .container-1D34oG {
@@ -82,6 +88,36 @@ body {
     background-color: #08091d;
 }
 
-.mentioned-xhSam7:before {
+.mentioned-xhSam7:before .ephemeral-1PsL1r:before .mentioned-xhSam7:before {
     background-color: var(--accent);
+}
+
+.wrapper-3WhCwL .ephemeral-1PsL1r {
+    color: var(--accent-bright);
+    background: var(--background-mentioned);
+}
+
+.avatar-1BDn8e, .wrapper-3t9DeA, .scrollableContainer-2NUZem, .channelTextArea-rNsIhG, .channelTextArea-2VhZ6z {
+    border-radius: 0% !important;
+}
+
+
+.channelTextArea-rNsIhG, .channelTextArea-2VhZ6z, .sidebar-2K8pFh, .avatar-1BDn8e{
+    border: 1px solid #1afaef10 ;    
+}
+
+foreignObject, rect {
+    mask: None;
+}
+
+.cursorDefault-dsQJ1n > rect {
+    fill: transparent;
+}
+
+.auto-Ge5KZx::-webkit-scrollbar-thumb, .auto-Ge5KZx::-webkit-scrollbar-track {
+    border-radius: 0;
+}
+
+code {
+    border: 1px solid var(--accent) !important;
 }
