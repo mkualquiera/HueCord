@@ -2,122 +2,22 @@
    Forked by mkualquiera for HueCord */
 
 .theme-dark {
-    --bg: #00000000;
-    --bg-overlay: rgba(0, 0, 14, 0.92); /* overlay for the background, intended for darkening the picture to make text more readable. */
-    --accent: rgba(153, 0, 133); /* prominent color in the UI */
-    --background-mentioned: rgb(233, 0, 202,0.05);
-    --accent-bright: rgb(255, 0, 234); /* color of mention text and other miscellaneous text */
-    --accent-back: rgba(255, 0, 242, 0.15); /* mention background color and other miscellaneous items */
-    --accent-back-bright: rgba(255, 0, 234, 0.4); /* mention background while hovering & bot tag background */
-    --icon-color: rgba(26, 250, 250, 0.5); /* color of channel icons, home tab icons, etc. */
-    --link-color: #1afaef; /* color of all links */
-    --text-normal: rgb(27, 182, 182);
-    --channels-default: rgb(27, 120, 120);
-    --header-primary: rgb(27, 220, 220);
-    --interactive-active: rgb(27, 220, 220);
-    --link-color-hover: #fa1a1a; /* color of all links while hovering */
-    --popup-background: rgb(10, 10, 34); /* background of modals and popouts */
-    --popup-highlight: #003; /* color of headers and footers of modals and popouts */
-    --unread-color: var(--accent-bright); /* color of unread/selected server indicators. */
-    --typing-height: 25px; /* height of typing element and margin underneath chat to allow space for it. */
-    --gift-button: none; /* nitro gift button in chat */
-    --gif-picker: flex; /* gif picker button in chat */
-    --discovery: flex; /* server discovery button under server list */
-    --scrollbar-auto-track: rgb(27, 120, 120);
-    --scrollbar-auto-thumb: rgb(27, 200, 200);
-
-    --trans02: rgba(0, 255, 255, 0.02);
-    --trans03: rgba(0, 255, 255, 0.03);
-    --trans05: rgba(0, 255, 255, 0.05);
-    --trans07: rgba(0, 255, 255, 0.07);
-    --trans09: rgba(0, 255, 255, 0.09);
-    --trans10: rgba(0, 255, 255, 0.10);
-    --trans15: rgba(0, 255, 255, 0.15);
-    --trans25: rgba(0, 255, 255, 0.25);
-    --trans50: rgba(0, 255, 255, 0.50);
-    --trans75: rgba(0, 255, 255, 0.75);
-
-    --background-primary: transparent;
-    --background-secondary: transparent;
-    --background-tertiary: transparent;
-    --deprecated-panel-background: transparent;
-    --channeltextarea-background: transparent;
-    --background-floating: var(--popup-background);
-    --text-muted: var(--trans50);
-    --text-link: var(--link-color);
-    --deprecated-card-bg: var(--trans07);
-    --deprecated-card-editable-bg: var(--trans10);
-    --interactive-normal: var(--trans50);
-    --background-modifier-hover: var(--trans10);
-    --background-modifier-selected: var(--trans10);
-    --deprecated-store-bg: transparent;
-    --interactive-muted: var(--trans25);
-    --activity-card-background: var(--trans07);
-    --deprecated-text-input-bg: var(--trans05);
-    --deprecated-text-input-border: var(--trans10);
-    --deprecated-text-input-border-hover: var(--trans15);
-    --deprecated-quickswitcher-input-background: var(--trans10);
-    --header-secondary: var(--trans50);
-    --background-message-hover: transparent;
-    --background-floating: var(--popup-background);
-    --background-secondary-alt: transparent;
-    --background-accent: var(--trans10);
+    --background-tertiary: #101010;
+    --background-secondary: #090909;
+    --background-secondary-alt: #0d0d0d;
+    --background-primary: #000000;
+    --channeltextarea-background: #050505;
 }
 /* ---- BACKGROUND ---- */
-html {
-    height: 100%;
-    background: var(--bg) !important;
-    background-size: cover !important;
-    background-position: center !important;
+
+.container-1D34oG {
+   background-color: var(--background-tertiary) !important; 
 }
+
+.uploadModal-2ifh8j {
+    --background-secondary: #090909;
+}
+
 body {
     font-family: 'Ubuntu', normal;
-    background: var(--bg-overlay) !important;
-    margin: 0;
-}
-
-* {
-    border-radius: 0% !important;
-}
-
-.theme-dark .container-1D34oG {
-    background-color: transparent;
-}
-
-.channelTextArea-rNsIhG {
-    background-color: #08091d;
-}
-
-.mentioned-xhSam7:before .ephemeral-1PsL1r:before .mentioned-xhSam7:before {
-    background-color: var(--accent);
-}
-
-.wrapper-3WhCwL .ephemeral-1PsL1r {
-    color: var(--accent-bright);
-    background: var(--background-mentioned);
-}
-
-.avatar-1BDn8e, .wrapper-3t9DeA, .scrollableContainer-2NUZem, .channelTextArea-rNsIhG, .channelTextArea-2VhZ6z {
-    border-radius: 0% !important;
-}
-
-
-.channelTextArea-rNsIhG, .channelTextArea-2VhZ6z, .sidebar-2K8pFh, .avatar-1BDn8e{
-    border: 1px solid #1afaef10 ;    
-}
-
-foreignObject, rect {
-    mask: None;
-}
-
-.cursorDefault-dsQJ1n > rect {
-    fill: transparent;
-}
-
-.auto-Ge5KZx::-webkit-scrollbar-thumb, .auto-Ge5KZx::-webkit-scrollbar-track {
-    border-radius: 0;
-}
-
-code {
-    border: 1px solid var(--accent) !important;
 }
