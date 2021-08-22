@@ -15,7 +15,11 @@
 }
 
 .uploadModal-2ifh8j {
-    --background-secondary: #090909;
+    background-color: var(--background-secondary) !important; 
+}
+
+.autocomplete-1vrmpx {
+    background-color: var(--background-secondary) !important; 
 }
 
 body {
